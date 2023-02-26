@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!--  -->
+  <style>
+    @import url(https://fonts.google.com/specimen/Outfit);
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .qr-continer{
+      font-Family: 'Outfit', sans-serif ;
+      height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    .qr {
+      background-color: hsl(0, 0%, 100%);
+      padding: 13px;
+      width: 18rem;
+      height: 27rem;
+      text-align: center;
+      border-radius: 15px;
+    }
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    h3{
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      padding: 1rem;
+    }
+    p{
+      font-weight: 400;
+      color: hsl(220, 15%, 55%);
+      font-size: 15px;
+    }
+    .attribution { font-size: 13px; text-align: center;  }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+    /* Mobile */
+    @media ( max-width: 375px ) {
+      .qr-continer{
+        width: 375px;
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 376px ) and ( max-width: 1440px ) {
+      .qr-continer{
+        width: 1440px;
+      }
+    }
+    </style>
+</head>
+<body>
+<div class="qr-continer">
+  <div class="qr">
+    <img src="/images/image-qr-code.png" alt="">
+    <h3>Improve your front-end skills by building projects</h3>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/ABNmmd" target="_blank">ABNmmd</a>.
+  </div>
+</div>
+  
+  
+</body>
+</html>
